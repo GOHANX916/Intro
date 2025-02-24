@@ -66,7 +66,7 @@
         <a class="block bg-purple-400 text-black py-2 px-4 rounded-full mb-2 text-xs" href="https://www.instagram.com/xopun.mhn?igsh=MWRxcWNuZWw2eXB3Yw==">ꜰᴏʟʟᴏᴡ ᴍᴇ ᴏɴ ɪɴꜱᴛᴀɢʀᴀᴍ</a>
         <a class="block bg-purple-400 text-black py-2 px-4 rounded-full text-xs" href="https://t.me/Gohan52">ᴍᴇꜱꜱᴀɢᴇ ᴍᴇ ᴏɴ ᴛᴇʟᴇɢʀᴀᴍ</a>
     </div>
-    <audio autoplay loop>
+    <audio id="backgroundAudio" loop>
         <source src="end.mp3" type="audio/mpeg">
         Your browser does not support the audio element.
     </audio>
@@ -74,6 +74,7 @@
         function enterSite() {
             document.getElementById('enterScreen').style.display = 'none';
             document.getElementById('mainContent').style.display = 'block';
+            document.getElementById('backgroundAudio').play();
         }
     </script>
 </body>
